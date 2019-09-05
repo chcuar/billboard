@@ -1,0 +1,8 @@
+<h1>Song Info</h1>
+<ul>
+<% @songs.each do |s|%>
+<li><%= link_to s.name, charts_show_path %>
+<%= link_to "Delete", artist_song_path(@artist, s), method: :delete %> <br> <br> </li>
+<% end %>
+
+<ul>
